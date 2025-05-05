@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司名称</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<script>
+    // 平滑滚动（如果有锚点链接）
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+<body>
+    <!-- 头部 Banner -->
+    <header>
+        <h1>上海开明投资管理有限公司</h1>
+        <p class="tagline">简洁 · 专业 · 高效</p>
+    </header>
+
+    <!-- 关于我们 -->
+    <section id="about">
+        <h2>关于我们</h2>
+        <p>我们是一家专注于 XX 领域的公司，致力于为客户提供优质服务。</p>
+    </section>
+
+    <!-- 服务 -->
+    <section id="services">
+        <h2>我们的服务</h2>
+        <div class="service">
+            <h3>服务 1</h3>
+            <p>服务 1 的简要描述。</p>
+        </div>
+        <div class="service">
+            <h3>服务 2</h3>
+            <p>服务 2 的简要描述。</p>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact">
+        <h2>联系我们</h2>
+        <p>邮箱：contact@example.com</p>
+    </section>
+</body>
+</html>
+<head>
+    ...
+    <link rel="stylesheet" href="style.css">
+</head>
