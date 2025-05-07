@@ -1,45 +1,106 @@
-
 /* 基础样式 */
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    font-family: 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
     color: #333;
 }
 
-/* 头部 Banner */
-header {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 第一部分：Logo */
+.logo-section {
+    background-color: white;
+    padding: 10px 0; /* 减少上下内边距 */
+    height: 80px; /* 固定高度 */
+    display: flex;
+    align-items: center; /* 垂直居中Logo */
+}
+
+.logo {
+    height: 150px; /* 适当缩小Logo尺寸 */
+    width: auto;
+}
+/* 修改后的第二部分：标语 */
+.slogan-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('images/background.jpg');
     background-size: cover;
-    /* 其他样式不变 */
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0; /* 增加了上下内边距 */
+    min-height: 400px; /* 新增最小高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.slogan-section .container {
+    width: 100%;
 }
 
-.tagline {
-    font-size: 1.2em;
-    opacity: 0.8;
-}
-
-/* 内容区块 */
-section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.service {
+/* 调整主标题样式 */
+.slogan-section h1 {
+    font-size: 2.1rem;
     margin-bottom: 30px;
+    font-weight: 400; /* 调整字重 */
+    display: inline-block; /* 确保间距生效 */
 }
 
-/* 响应式设计 */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2em;
+
+.divider {
+    width: 150px; /* 加长了分割线 */
+    height: 3px; /* 加粗了分割线 */
+    background-color: white;
+    margin: 30px auto; /* 增加了分割线间距 */
+}
+
+.slogan {
+    font-size: 1.3rem; /* 增大了副标题字号 */
+    font-weight: 300;
+    margin-top: 30px;
+}
+/* 第三部分：备案和联系方式 - 调整后更精致 */
+.contact-section {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+}
+
+.contact-content {
+    width: fit-content;      /* 容器宽度根据内容自适应 */
+    margin-left: auto;      /* 使整个容器靠右 */
+    margin-right: 20px;     /* 右侧留白 */
+    text-align: left;       /* 内容文字左对齐 */
+    padding: 15px 25px;     /* 内部留白 */
+    max-width: 400px;       /* 最大宽度限制 */
+}
+
+.contact-content p {
+    margin: 8px 0;  /* 减小段落间距 */
+    line-height: 1.5;
+    font-size: 0.6rem;  /* 调小字体大小 */
+}
+
+.record {
+    color: #aaa;
+    font-size: 0.6rem;  /* 备案信息更小 */
+    margin-bottom: 15px;  /* 增加与联系信息的间距 */
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .contact-content {
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .contact-content p {
+        font-size: 0.85rem;  /* 手机端稍小 */
     }
 }
