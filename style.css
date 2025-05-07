@@ -28,7 +28,7 @@ body {
 /* 修改后的第二部分：标语 */
 .slogan-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('images/background.jpg');
+                url('background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
