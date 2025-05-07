@@ -3,57 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公司名称</title>
+    <title>开明投资</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-
-<script>
-    // 平滑滚动（如果有锚点链接）
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-</script>
-
 <body>
-    <!-- 头部 Banner -->
-    <header>
-        <h1>上海开明投资管理有限公司</h1>
-        <p class="tagline">简洁 · 专业 · 高效</p>
-    </header>
-
-    <!-- 关于我们 -->
-    <section id="about">
-        <h2>关于我们</h2>
-        <p>我们是一家专注于 XX 领域的公司，致力于为客户提供优质服务。</p>
-    </section>
-
-    <!-- 服务 -->
-    <section id="services">
-        <h2>我们的服务</h2>
-        <div class="service">
-            <h3>服务 1</h3>
-            <p>服务 1 的简要描述。</p>
-        </div>
-        <div class="service">
-            <h3>服务 2</h3>
-            <p>服务 2 的简要描述。</p>
+    <!-- 第一部分：Logo -->
+    <section class="logo-section">
+        <div class="container">
+            <img src="images/logo.png" alt="开明投资 Logo" class="logo">
         </div>
     </section>
 
-    <!-- 联系方式 -->
-    <section id="contact">
-        <h2>联系我们</h2>
-        <p>邮箱：contact@example.com</p>
+    <!-- 第二部分：标语 -->
+    <section class="slogan-section">
+        <div class="container">
+            <h1>连接资本力量与可持续未来</h1>
+            <div class="divider"></div>
+            <p class="slogan">开明投资</p>
+        </div>
+    </section>
+
+    <!-- 第三部分：备案和联系方式 -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <p>邮箱：info@kmtz.cn</p>
+                <p>电话：(021)5888-2085</p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
-<head>
-    ...
-    <link rel="stylesheet" href="style.css">
-</head>
