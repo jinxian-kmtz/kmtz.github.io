@@ -104,3 +104,18 @@ body {
         font-size: 0.85rem;  /* 手机端稍小 */
     }
 }
+
+.slogan-section {
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), 
+    url('images/background-small.webp') center/cover;
+}
+
+/* 高分辨率设备才加载大图 */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  .slogan-section {
+    background-image: 
+      linear-gradient(rgba(0,0,0,0.5)),
+      url('images/background-large.webp');
+  }
+}
